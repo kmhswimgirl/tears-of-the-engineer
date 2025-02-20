@@ -37,6 +37,7 @@ document.addEventListener('keydown', (e) => {
         default:
             return;
     }
+
     const newScale = Math.min(maxScale, Math.max(minScale, scale * delta));
     const scaleChange = newScale / scale;
     scale = newScale;
