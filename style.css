@@ -1,6 +1,5 @@
 .navbar {
     display: flex;
-    justify-content: space-between; /* Optional: Adjusts spacing between items */
     align-items: center; /* Optional: Aligns items vertically in the center */
-    color: blueviolet;
+    background-color: blueviolet;
 }
