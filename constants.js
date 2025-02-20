@@ -12,7 +12,10 @@ const waterDark = "#212A2E";
 const paths = "#99925D";
 const linework = "#241C05";
 
-class Icons {
+const shrineC1 = 'rgb(15,173,235)';
+const shrineC2 = 'rgb(45,56,139)';
+
+class Icons { //class to hold all of the Icon SVGs
     constructor() {
         this.shrineIcon = `
         <svg width="10%" height="10%" 
@@ -25,6 +28,10 @@ class Icons {
 
             <path d="M222,469.06L495.3,200L768.31,469.06L495.3,741.38L222,469.06ZM535.02,563.22C535.02,529.75 451.35,527.21 451.35,563.22L451.35,633.11L495.65,670.51L535.02,633.11L535.02,563.22ZM633.45,529.75L692.51,469.06L495.15,275.79L298.78,469.06L359.81,529.75C376.51,502.54 400.03,474.47 429.62,456.45L429.62,402.77C440.99,329.1 545.64,325.23 559.94,402.77L559.94,456.45C589.52,474.47 616.75,502.54 633.45,529.75Z" style="fill:rgb(15,173,235);stroke:rgb(45,56,139);stroke-width:12px;"/>
         </svg>`;
+
+        this.towerIcon = 'placeholder';
+        this.reshallIcon = 'placeholder1';
+        this.labIcon = 'placeholder2';
     }
 
     insertShrineIcon(elementId) {
@@ -38,9 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Links class
-class Links {
+class Links { //class to manage links
     constructor() {
-        this.links = {
+        this.wpiLinks = {
             daniels: "https://www.wpi.edu/about/locations/daniels-hall",
             east: "https://www.wpi.edu/about/locations/east-hall",
             morgan: "https://www.wpi.edu/about/locations/morgan-hall",
@@ -53,7 +60,7 @@ class Links {
     }
 
     getLink(page) {
-        return this.links[page];
+        return this.wpiLinks[page];
     }
 
     addLink(page, url) {
@@ -62,5 +69,11 @@ class Links {
 
     removeLink(page) {
         delete this.links[page];
+    }
+}
+
+class baseMap{ //class to control the base map
+    constructor(){
+        this.mainMap = 'placeholder4';
     }
 }
