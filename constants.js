@@ -23,17 +23,15 @@ class Icons { //class to hold all of the Icon SVGs
     constructor() {
         this.shrineIcon = `
         <svg width="10%" height="10%" 
-            viewBox="0 0 1000 1000" 
-            id="shrine" class = 'shrine' version="1.1" 
+            viewBox="200 200 575 550" 
+             version="1.1" 
             xmlns="http://www.w3.org/2000/svg" 
             xmlns:xlink="http://www.w3.org/1999/xlink" 
             xml:space="preserve" xmlns:serif="http://www.serif.com/" 
             style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;">
 
-            <path d="M222,469.06L495.3,200L768.31,469.06L495.3,741.38L222,469.06ZM535.02,563.22C535.02,529.75 451.35,527.21 451.35,563.22L451.35,633.11L495.65,670.51L535.02,633.11L535.02,563.22ZM633.45,529.75L692.51,469.06L495.15,275.79L298.78,469.06L359.81,529.75C376.51,502.54 400.03,474.47 429.62,456.45L429.62,402.77C440.99,329.1 545.64,325.23 559.94,402.77L559.94,456.45C589.52,474.47 616.75,502.54 633.45,529.75Z" style="fill:rgb(15,173,235);stroke:rgb(45,56,139);stroke-width:12px;"/>
+            <path id="shrine" class = 'shrine' d="M222,469.06L495.3,200L768.31,469.06L495.3,741.38L222,469.06ZM535.02,563.22C535.02,529.75 451.35,527.21 451.35,563.22L451.35,633.11L495.65,670.51L535.02,633.11L535.02,563.22ZM633.45,529.75L692.51,469.06L495.15,275.79L298.78,469.06L359.81,529.75C376.51,502.54 400.03,474.47 429.62,456.45L429.62,402.77C440.99,329.1 545.64,325.23 559.94,402.77L559.94,456.45C589.52,474.47 616.75,502.54 633.45,529.75Z" style="fill:rgb(15,173,235);stroke:rgb(45,56,139);stroke-width:12px;"/>
         </svg>`;
-
-        this.towerIcon = ' ';
 
         this.resHallIcon = `
         <svg width="3%" height="3%" viewBox="0 0 1000 1040" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
@@ -64,8 +62,8 @@ class Icons { //class to hold all of the Icon SVGs
             <clipPath id="_clip1">
                 <rect id="Artboard11" serif:id="Artboard1" x="0" y="0" width="1000" height="1039.37"/>
             </clipPath>
-             id="labIcon" class = 'labIcon'
-            <g clip-path="url(#_clip1)">
+             
+            <g clip-path="url(#_clip1)"id="labIcon" class = 'labIcon'>
                 <path d="M0,100C-0,73.478 10.536,48.043 29.289,29.289C48.043,10.536 73.478,0 100,-0L900,0C926.522,0 951.957,10.536 970.711,29.289C989.464,48.043 1000,73.478 1000,100C1000,298.617 1000,740.753 1000,939.37C1000,965.892 989.464,991.327 970.711,1010.08C951.957,1028.83 926.522,1039.37 900,1039.37L100,1039.37C73.478,1039.37 48.043,1028.83 29.289,1010.08C10.536,991.327 -0,965.892 0,939.37L0,100Z" style="fill:rgb(198,183,119);"/>
                 <g id="beaker" transform="matrix(1,0,0,1,-3.28534,-11.2429)">
                     <g id="lab">
@@ -136,7 +134,7 @@ class Icons { //class to hold all of the Icon SVGs
             <clipPath id="_clip1">
                 <rect id="Artboard11" serif:id="Artboard1" x="0" y="0" width="1000" height="1039.37"/>
             </clipPath>
-            <g clip-path="url(#_clip1)">
+            <g clip-path="url(#_clip1)" class = 'skullIcon'>
                 <path d="M0,100C-0,73.478 10.536,48.043 29.289,29.289C48.043,10.536 73.478,0 100,-0L900,0C926.522,0 951.957,10.536 970.711,29.289C989.464,48.043 1000,73.478 1000,100C1000,298.617 1000,740.753 1000,939.37C1000,965.892 989.464,991.327 970.711,1010.08C951.957,1028.83 926.522,1039.37 900,1039.37L100,1039.37C73.478,1039.37 48.043,1028.83 29.289,1010.08C10.536,991.327 -0,965.892 0,939.37L0,100Z" style="fill:rgb(198,183,119);"/>
                 <g transform="matrix(1.32852,0,0,1.32852,-176.949,-168.524)">
                     <g id="skull">
