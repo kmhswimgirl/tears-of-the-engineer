@@ -1,19 +1,38 @@
+body{
+    background-color: black;
+}
+
+
+.navbar-container {
+    display: flex;
+    justify-content: center; /* Centers the navbar horizontally */
+    width: 100%; /* Ensures the container takes the full width */
+}
+
 .navbar {
     display: flex;
     align-items: center; /* Aligns items vertically in the center */
-    background-color: blueviolet;
-    padding: 10px; /* Adds padding around the navbar */
+    background-color: #99925D;
     position: fixed;
     top: 0;
+
     width: 100%;
     z-index: 1000;
+    border-radius: 20px;
+    width: 500px;
+
+}
+
+.navbar button{
+    background-color:#354146;
+    margin: 10px;
+    border-radius: 10px;
+    height: 40px;
 }
 
 .navbar a {
-    color: rgb(191, 107, 192); /* Sets the text color to white */
+    color: #99925D; /* Sets the text color to white */
     text-decoration: none; /* Removes underline from links */
-    padding: 10px 20px; /* Adds padding around the links */
-    border-radius: 5px; /* Rounds the corners of the links */
 }
 
 
@@ -22,7 +41,6 @@
     height: 600px; /* Adjust height as needed */
     overflow: hidden;
     position: relative;
-    cursor: grab;
     margin-top: 60px;
 }
 
@@ -36,6 +54,15 @@
     transform-origin: top left;
 }
 
-.shrine:hover{
-    fill: aqua;
+
+/* Remove the filter effect by default */
+.shrine path {
+    transition: transform 0.2s, fill 0.2s, stroke 0.2s, filter 0.2s; /* Smooth transition for the changes */
+    transform-origin: center; /* Ensure the scaling occurs from the center */
+}
+
+/* Apply the glow effect only to the path elements within the SVGs on hover */
+.shrine svg:hover {
+    transform: scale(1.1); /* Example of scaling the element */
+    filter: url(#glow); /* Apply the glow filter */
 }

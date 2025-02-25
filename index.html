@@ -5,29 +5,46 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     </head>
+
     <header>
-        <div class = "navbar" >
-            <button> <p>About</p> </button>
-            <button><a href="Locations/locations.html"><p>Locations</p> </a></button>
+        <div class = 'navbar-container'> 
+            <div class = "navbar" >
+                <img src = "Images/TOTE-logo.svg" height = "100"> 
+                <button><a href = "About/about.html"><p>About</p> </a></button>
+                <button><a href = "Locations/locations.html"><p>Locations</p> </a></button>
+            </div>
         </div>
     </header>
 
     <body>
-
+        <!-- Map Controls -->
         <div class="map-container">
             <img id="pannable-image" src="images/botw-map.png" alt="BOTW Map">
         </div> 
 
-        <a id="shrine-button"><div class = "shrine" id="shrine"></div></a>
-        <a id="goat-button"><div class = "goatIcon" id="goatIcon"></div></a>
-        <a id="dining-button"><div class = "diningIcon" id="diningIcon"></div></a>
-        <a id="lab-button"><div class = "labIcon" id="labIcon"></div></a>
-        <a id="resHall-button"><div class="resHallIcon" id="resHallIcon"></div></a>
-        <a id = "skulltomb-button"><div class="skullIcon" id="skullIcon"></div></a>
+        <!-- Icon Setup & positioning -->
+        <a id="shrine-button"><span class = "shrine" id="shrine"></span></a>
+
+        <a id="goat-button"><span class = "goatIcon" id="goatIcon"></span></a>
+        <a id="dining-button"><span class = "diningIcon" id="diningIcon"></span></a>
+        <a id="lab-button"><span class = "labIcon" id="labIcon"></span></a>
+        <a id="resHall-button"><span class="resHallIcon" id="resHallIcon"></span></a>
+        <a id = "skulltomb-button"><span class="skullIcon" id="skullIcon"></span></a>
+
+        /* Define the glow filter */
+        <svg width="0" height="0">
+            <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stdDeviation="3.5" result="coloredBlur"/>
+                <feMerge>
+                    <feMergeNode in="coloredBlur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+            </filter>
+        </svg>
 
         <!-- importing Javascript functionality -->
         <script src = "constants.js"> </script>
-        <script src="script.js"> </script>   
+        <script src="script.js"> </script>
 
     </body>
 </html>
