@@ -7,10 +7,12 @@ _Humanities and Arts capstone project for Advanced Contemporary Works C25_
 ## About
 This is a website that displays a map of WPI's campus in the style found in the _Legend of Zelda_ nintendo switch games. 
 
-<img src="Images/BotW-Map.png" alt="The Legend of Gompei: Tears of the Engineer" width="300">
+<img src="Images/BotW-Map.png" alt="OG Zelda Map from the switch games" width="300">
 ^the map from the Legend of Zelda games, also my inspiration for this project
 
 Clicking on an icon will take you to the wpi.edu page about that building. There are a few icons on the map, each signifying a different category of building.
+
+You can also navigate the map by using the arrow keys and zoom using the "-" and "+" keys. Trackpad controls are surrently being developed, however it really sucks to do in vanilla JS...
 
 Labs:
 
