@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1000 1040" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <rect id="Artboard1" x="0" y="0" width="1000" height="1039.37" style="fill:none;"/>
+    <clipPath id="_clip1">
+        <rect id="Artboard11" serif:id="Artboard1" x="0" y="0" width="1000" height="1039.37"/>
+    </clipPath>
+    <g clip-path="url(#_clip1)">
+        <path d="M0,100C-0,73.478 10.536,48.043 29.289,29.289C48.043,10.536 73.478,0 100,-0L900,0C926.522,0 951.957,10.536 970.711,29.289C989.464,48.043 1000,73.478 1000,100C1000,298.617 1000,740.753 1000,939.37C1000,965.892 989.464,991.327 970.711,1010.08C951.957,1028.83 926.522,1039.37 900,1039.37L100,1039.37C73.478,1039.37 48.043,1028.83 29.289,1010.08C10.536,991.327 -0,965.892 0,939.37L0,100Z" style="fill:rgb(198,183,119);"/>
+        <g id="beaker" transform="matrix(1,0,0,1,-3.28534,-11.2429)">
+            <g id="lab">
+                <g id="beaker1" serif:id="beaker">
+                    <g transform="matrix(0.878343,0,0,0.878343,87.2595,236.61)">
+                        <path d="M408.196,219.22C296.559,221.512 294.926,272.933 400.062,285.781C455.024,292.498 375.148,489.649 375.148,489.649C303.051,577.434 205.46,685.366 211.114,742.988C220.6,839.668 321,844.951 321,844.951L638.474,844.951C638.474,844.951 745.412,848.22 735.808,734.925C728.838,652.71 633.63,590.266 575.899,485.531C566.878,469.167 509.107,285.05 558.037,284.127C669.565,282.024 671.388,217.573 556.822,219.734C494.1,220.916 446.098,218.442 408.196,219.22Z" style="fill:rgb(165,140,83);"/>
+                    </g>
+                    <g transform="matrix(1.34286,0,0,1.34286,-276.83,-131.549)">
+                        <ellipse cx="608.337" cy="340.435" rx="29.193" ry="26.24" style="fill:rgb(165,140,83);"/>
+                    </g>
+                    <g transform="matrix(1.34286,0,0,1.34286,-276.83,-131.549)">
+                        <ellipse cx="519.977" cy="255.398" rx="59.167" ry="58.797" style="fill:rgb(165,140,83);"/>
+                    </g>
+                    <g transform="matrix(1.34286,0,0,1.34286,-276.83,-131.549)">
+                        <ellipse cx="634.188" cy="185.169" rx="24.079" ry="25.34" style="fill:rgb(165,140,83);"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
