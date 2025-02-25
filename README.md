@@ -1,5 +1,5 @@
 
-<img src = 'Images/TOTE-logo.png' >
+<img src="Images/TOTE-logo.png" alt="The Legend of Gompei: Tears of the Engineer" width="200">
 
 # tears-of-the-engineer
 _Humanities and Arts capstone project for Advanced Contemporary Works C25_
