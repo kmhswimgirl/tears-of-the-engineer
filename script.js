@@ -6,8 +6,6 @@ let originX = 0;
 let originY = 0;
 const minScale = 2;
 const maxScale = 5;
-const maxXoff = 0;
-const maxYoff = 0;
 
 //keybinds for moving the map
 document.addEventListener('keydown', (e) => {
@@ -25,16 +23,28 @@ document.addEventListener('keydown', (e) => {
             delta = 0.95;
             break;
         case 'ArrowUp':
-            img.style.top = `${img.offsetTop + 15}px`;
+            if(570 >= img.offsetTop){ //bounds for moving the map around
+                img.style.top = `${img.offsetTop + 15}px`;
+                console.log(img.offsetTop);
+            }
             return;
         case 'ArrowDown':
+            if(-565 <= img.offsetTop){
             img.style.top = `${img.offsetTop - 15}px`;
+            console.log(img.offsetTop);
+            }
             return;
         case 'ArrowLeft':
-            img.style.left = `${img.offsetLeft + 15}px`;
+            if(1100 >= img.offsetLeft){
+                img.style.left = `${img.offsetLeft + 15}px`;
+                console.log(img.offsetLeft);
+            }
             return;
         case 'ArrowRight':
-            img.style.left = `${img.offsetLeft - 15}px`;
+            if(img.offsetLeft >= -675){
+                img.style.left = `${img.offsetLeft - 15}px`;
+                console.log(img.offsetLeft);
+            }
             return;
         default:
             return;
