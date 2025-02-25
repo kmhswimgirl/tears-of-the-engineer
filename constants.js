@@ -167,16 +167,6 @@ class Icons { //class to hold all of the Icon SVGs
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const icons = new Icons();
-    icons.insertShrineIcon('shrine');
-    icons.insertGoatIcon('goatIcon');
-    icons.insertDiningIcon('diningIcon');
-    icons.insertlabIcon('labIcon');
-    icons.insertResHallIcon('resHallIcon');
-    icons.insertSkullIcon('skullIcon');
-});
-
 // Links class
 class Links { //class to manage links
     constructor() {
@@ -191,7 +181,28 @@ class Links { //class to manage links
             stoddard: "https://www.wpi.edu/about/locations/stoddard-complex",
             ellsworth: "https://www.wpi.edu/about/locations/ellsworth-apartments",
             fuller: "https://www.wpi.edu/about/locations/fuller-apartments",
-            skullTomb: ""
+            skullTomb: "https://users.wpi.edu/~skull/index.html"
         };
     }
+
+
 }
+
+//creating interactive elements to include in index.html
+document.addEventListener('DOMContentLoaded', () => {
+    const icons = new Icons();
+    icons.insertShrineIcon('shrine');
+    icons.insertGoatIcon('goatIcon');
+    icons.insertDiningIcon('diningIcon');
+    icons.insertlabIcon('labIcon');
+    icons.insertResHallIcon('resHallIcon');
+    icons.insertSkullIcon('skullIcon');
+
+    const links = new Links();
+    document.getElementById('shrine-button').href = links.wpiLinks.daniels;
+    document.getElementById('goat-button').href = links.wpiLinks.morgan;
+    document.getElementById('dining-button').href = links.wpiLinks.riley;
+    document.getElementById('lab-button').href = links.wpiLinks.institute;
+    document.getElementById('resHall-button').href = links.wpiLinks.east;
+    document.getElementById('skull-button').href = links.wpiLinks.skullTomb;
+});
