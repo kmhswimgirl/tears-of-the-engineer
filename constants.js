@@ -57,7 +57,7 @@ class Icons { //class to hold all of the Icon SVGs
                 </g>
             </g>
         </svg>`;
-    
+
         this.labIcon = `
         <svg width="3%" height="3%" viewBox="0 0 1000 1040" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
             <rect id="Artboard1" x="0" y="0" width="1000" height="1039.37" style="fill:none;"/>
@@ -129,6 +129,22 @@ class Icons { //class to hold all of the Icon SVGs
                 </g>
             </g>
         </svg>`;
+
+        this.skullIcon = `
+        <svg width="3%" height="3%" viewBox="0 0 1000 1040" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+            <rect id="Artboard1" x="0" y="0" width="1000" height="1039.37" style="fill:none;"/>
+            <clipPath id="_clip1">
+                <rect id="Artboard11" serif:id="Artboard1" x="0" y="0" width="1000" height="1039.37"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <path d="M0,100C-0,73.478 10.536,48.043 29.289,29.289C48.043,10.536 73.478,0 100,-0L900,0C926.522,0 951.957,10.536 970.711,29.289C989.464,48.043 1000,73.478 1000,100C1000,298.617 1000,740.753 1000,939.37C1000,965.892 989.464,991.327 970.711,1010.08C951.957,1028.83 926.522,1039.37 900,1039.37L100,1039.37C73.478,1039.37 48.043,1028.83 29.289,1010.08C10.536,991.327 -0,965.892 0,939.37L0,100Z" style="fill:rgb(198,183,119);"/>
+                <g transform="matrix(1.32852,0,0,1.32852,-176.949,-168.524)">
+                    <g id="skull">
+                        <path d="M356.642,732.158L288.538,774.497L475.049,774.497L420.305,731.54L425.593,303.903L708.097,303.004L740.289,346.42L740.289,261.56L278.817,261.56L359.854,303.628L356.642,732.158Z" style="fill:rgb(165,140,83);"/>
+                    </g>
+                </g>
+            </g>
+        </svg>`;
     }
 
     insertShrineIcon(elementId) {
@@ -146,6 +162,9 @@ class Icons { //class to hold all of the Icon SVGs
     insertResHallIcon(elementId){
         document.getElementById(elementId).innerHTML = this.resHallIcon;
     }
+    insertSkullIcon(elementId){
+        document.getElementById(elementId).innerHTML = this.skullIcon;
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -155,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
     icons.insertDiningIcon('diningIcon');
     icons.insertlabIcon('labIcon');
     icons.insertResHallIcon('resHallIcon');
-
+    icons.insertSkullIcon('skullIcon');
 });
 
 // Links class
@@ -171,13 +190,8 @@ class Links { //class to manage links
             institute: "https://www.wpi.edu/about/locations/institute-hall",
             stoddard: "https://www.wpi.edu/about/locations/stoddard-complex",
             ellsworth: "https://www.wpi.edu/about/locations/ellsworth-apartments",
-            fuller: "https://www.wpi.edu/about/locations/fuller-apartments"
+            fuller: "https://www.wpi.edu/about/locations/fuller-apartments",
+            skullTomb: ""
         };
-    }
-}
-
-class baseMap{ //class to control the base map
-    constructor(){
-        this.mainMap = 'placeholder4';
     }
 }
