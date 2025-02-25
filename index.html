@@ -5,20 +5,22 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     </head>
+
     <header>
         <div class = "navbar" >
             <img src = "Images/TOTE-logo.svg" height = "100"> 
             <button><a href = "About/about.html"><p>About</p> </a></button>
-            <button><p>Locations</p></button>
+            <button><a href = "Locations/locations.html"><p>Locations</p> </a></button>
         </div>
     </header>
 
     <body>
-
+        <!-- Map Controls -->
         <div class="map-container">
             <img id="pannable-image" src="images/botw-map.png" alt="BOTW Map">
         </div> 
-
+        
+        <!-- Icon Setup & positioning -->
         <a id="shrine-button"><div class = "shrine" id="shrine"></div></a>
         <a id="goat-button"><div class = "goatIcon" id="goatIcon"></div></a>
         <a id="dining-button"><div class = "diningIcon" id="diningIcon"></div></a>
@@ -28,7 +30,7 @@
 
         <!-- importing Javascript functionality -->
         <script src = "constants.js"> </script>
-        <script src="script.js"> </script>   
+        <script src="script.js"> </script>
 
     </body>
 </html>
