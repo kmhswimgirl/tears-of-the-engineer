@@ -4,8 +4,10 @@ let startX, startY, initialX, initialY;
 let scale = 1;
 let originX = 0;
 let originY = 0;
-const minScale = 0.5;
-const maxScale = 3;
+const minScale = 2;
+const maxScale = 5;
+const maxXoff = 0;
+const maxYoff = 0;
 
 //keybinds for moving the map
 document.addEventListener('keydown', (e) => {
