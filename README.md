@@ -1,5 +1,5 @@
 
-<img src = 'Images/TOTE-logo(correct?).svg' >
+<img src = 'Images/TOTE-logo.png' >
 
 # tears-of-the-engineer
 _Humanities and Arts capstone project for Advanced Contemporary Works C25_
