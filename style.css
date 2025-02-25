@@ -16,9 +16,6 @@
     border-radius: 5px; /* Rounds the corners of the links */
 }
 
-button {
-    border-radius: 20px; /* Rounds the corners of the links */
-}
 
 .map-container {
     width: 100%;
@@ -37,4 +34,8 @@ button {
     height: 100%;
     cursor: grab;
     transform-origin: top left;
+}
+
+.shrine:hover{
+    fill: aqua;
 }
