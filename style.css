@@ -1,10 +1,21 @@
+body{
+    background-color: black;
+}
+
+
+.navbar-container {
+    display: flex;
+    justify-content: center; /* Centers the navbar horizontally */
+    width: 100%; /* Ensures the container takes the full width */
+}
+
 .navbar {
     display: flex;
     align-items: center; /* Aligns items vertically in the center */
     background-color: #99925D;
     position: fixed;
     top: 0;
-    
+
     width: 100%;
     z-index: 1000;
     border-radius: 20px;
@@ -12,11 +23,16 @@
 
 }
 
+.navbar button{
+    background-color:#354146;
+    margin: 10px;
+    border-radius: 10px;
+    height: 40px;
+}
+
 .navbar a {
     color: #99925D; /* Sets the text color to white */
     text-decoration: none; /* Removes underline from links */
-    padding: 10px 20px; /* Adds padding around the links */
-    border-radius: 5px; /* Rounds the corners of the links */
 }
 
 
