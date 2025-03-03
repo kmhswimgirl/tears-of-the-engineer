@@ -1,7 +1,11 @@
 body{
     background-color: black;
+    overflow: hidden;
 }
 
+html {
+    overflow: hidden;
+}
 
 .navbar-container {
     display: flex;
@@ -14,13 +18,12 @@ body{
     align-items: center; /* Aligns items vertically in the center */
     background-color: #99925D;
     position: fixed;
-    top: 0;
+    top: 10px;
 
     width: 100%;
     z-index: 1000;
     border-radius: 20px;
     width: 500px;
-
 }
 
 .navbar button{
@@ -35,25 +38,19 @@ body{
     text-decoration: none; /* Removes underline from links */
 }
 
-
 .map-container {
     width: 100%;
     height: 600px; /* Adjust height as needed */
     overflow: hidden;
-    position: relative;
-    margin-top: 60px;
+    position: center;
 }
 
 #pannable-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: auto;
+    width: 1000px;
     height: 100%;
     cursor: grab;
     transform-origin: top left;
 }
-
 
 /* Remove the filter effect by default */
 .shrine path {
@@ -65,4 +62,21 @@ body{
 .shrine svg:hover {
     transform: scale(1.1); /* Example of scaling the element */
     filter: url(#glow); /* Apply the glow filter */
+}
+
+/*classes to lock the icons into place*/
+
+.map-container a {
+    position: absolute;
+}
+
+#shrine-button {
+    top: 100px; /* Adjust the position as needed */
+    left: 200px; /* Adjust the position as needed */
+}
+
+#map-content {
+    position: absolute;
+    top: 0;
+    left: 0;
 }

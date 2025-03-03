@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <title> Tears of the Engineer </title>
         <link rel="stylesheet" type="text/css" href="style.css">
@@ -17,21 +18,24 @@
     </header>
 
     <body>
-        <!-- Map Controls -->
+        <!-- Map Container -->
         <div class="map-container">
-            <img id="pannable-image" src="images/botw-map.png" alt="BOTW Map">
-        </div> 
+            <div id="map-content">
+                <img id="pannable-image" src="Images/BotW-Map.png" alt="BOTW Map">
+                <a id="shrine-button"><span class="shrine" id="shrine"></span></a>
+            </div>
+        </div>
 
         <!-- Icon Setup & positioning -->
-        <a id="shrine-button"><span class = "shrine" id="shrine"></span></a>
-
+        
         <a id="goat-button"><span class = "goatIcon" id="goatIcon"></span></a>
         <a id="dining-button"><span class = "diningIcon" id="diningIcon"></span></a>
         <a id="lab-button"><span class = "labIcon" id="labIcon"></span></a>
         <a id="resHall-button"><span class="resHallIcon" id="resHallIcon"></span></a>
-        <a id = "skulltomb-button"><span class="skullIcon" id="skullIcon"></span></a>
+        <a id = "skulltomb-button"><span class="skullIcon" id="skullIcon"></span></a> 
+       
 
-        /* Define the glow filter */
+        <!-- Shrine Glow filter-->
         <svg width="0" height="0">
             <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
                 <feGaussianBlur stdDeviation="3.5" result="coloredBlur"/>
@@ -45,6 +49,5 @@
         <!-- importing Javascript functionality -->
         <script src = "constants.js"> </script>
         <script src="script.js"> </script>
-
     </body>
 </html>
