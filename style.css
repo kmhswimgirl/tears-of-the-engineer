@@ -68,6 +68,11 @@ html {
 
 .map-container a {
     position: absolute;
+    display: inline-block;
+    width: auto; /* Adjust the width as needed */
+    height: auto; /* Adjust the height as needed */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
 }
 
 #shrine-button {

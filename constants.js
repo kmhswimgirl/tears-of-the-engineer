@@ -22,7 +22,7 @@ const iconDark = ' ';
 class Icons { //class to hold all of the Icon SVGs
     constructor() {
         this.shrineIcon = `
-        <svg width="10%" height="10%" 
+        <svg width="20%" height="20%" 
             viewBox="200 200 575 550" 
              version="1.1" 
             xmlns="http://www.w3.org/2000/svg" 

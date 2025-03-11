@@ -8,6 +8,12 @@ let originY = 0;
 const minScale = 1;
 const maxScale = 3;
 
+const maxOffsetXn = -675;
+const maxOffsetXp = 1100;
+const maxOffsetYn = -565;
+const maxOffsetYp = 570;
+
+
 //keybinds for moving the map
 document.addEventListener('keydown', (e) => {
     const rect = mapContent.getBoundingClientRect();
@@ -24,25 +30,25 @@ document.addEventListener('keydown', (e) => {
             delta = 0.95;
             break;
         case 'ArrowUp':
-            if(570 >= mapContent.offsetTop){ //bounds for moving the map around
+            if(maxOffsetYp >= mapContent.offsetTop){ //bounds for moving the map around
                 mapContent.style.top = `${mapContent.offsetTop + 15}px`;
                 console.log(mapContent.offsetTop);
             }
             return;
         case 'ArrowDown':
-            if(-565 <= mapContent.offsetTop){
+            if(maxOffsetYn <= mapContent.offsetTop){
             mapContent.style.top = `${mapContent.offsetTop - 15}px`;
             console.log(mapContent.offsetTop);
             }
             return;
         case 'ArrowLeft':
-            if(1100 >= mapContent.offsetLeft){
+            if(maxOffsetXp >= mapContent.offsetLeft){
                 mapContent.style.left = `${mapContent.offsetLeft + 15}px`;
                 console.log(mapContent.offsetLeft);
             }
             return;
         case 'ArrowRight':
-            if(mapContent.offsetLeft >= -675){
+            if(mapContent.offsetLeft >= maxOffsetYn){
                 mapContent.style.left = `${mapContent.offsetLeft - 15}px`;
                 console.log(mapContent.offsetLeft);
             }
