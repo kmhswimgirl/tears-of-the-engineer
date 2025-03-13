@@ -8,7 +8,6 @@ body{
     color:beige;
     padding: 10px;
     margin: 0px;
-    
 }
 
 /* Text Rules */
@@ -27,4 +26,8 @@ h2{
 
 .prog{
     width: 600px;
+}
+
+.final{
+    width: 1000px;
 }
