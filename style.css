@@ -126,8 +126,36 @@ html {
 }
 
 #institute{
-    top: 410px; 
-    left: 375px; 
+    top: 705px; 
+    left: 725px; 
+    width: 20px;
+    height: 20px;
+}
+
+#founders{
+    top: 590px; 
+    left: 755px; 
+    width: 20px;
+    height: 20px;
+}
+
+#ellsworth{
+    top: 645px; 
+    left: 200px; 
+    width: 20px;
+    height: 20px;
+}
+
+#fuller{
+    top: 650px; 
+    left: 300px; 
+    width: 20px;
+    height: 20px;
+}
+
+#stoddard{
+    top: 635px; 
+    left: 90px; 
     width: 20px;
     height: 20px;
 }
@@ -137,4 +165,3 @@ html {
     top: 0;
     left: 0;
 }
-

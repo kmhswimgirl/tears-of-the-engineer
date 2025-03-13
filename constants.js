@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
     icons.insertSkullIcon('skullIcon');
 
     const links = new Links();
-    document.getElementById('shrine-button').href = links.wpiLinks.daniels;
+    document.getElementById('daniels').href = links.wpiLinks.daniels;
     document.getElementById('goat-button').href = links.wpiLinks.morgan;
     document.getElementById('dining-button').href = links.wpiLinks.riley;
     document.getElementById('lab-button').href = links.wpiLinks.institute;
