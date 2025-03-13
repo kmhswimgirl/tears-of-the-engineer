@@ -182,8 +182,6 @@ class Links { //class to manage links
             skullTomb: "https://users.wpi.edu/~skull/index.html"
         };
     }
-
-
 }
 
 //creating interactive elements to include in index.html

@@ -160,6 +160,15 @@ html {
     height: 20px;
 }
 
+#skull{
+    top: 630px; 
+    left: 655px; 
+    width: 15px;
+    height: 15px;
+}
+
+
+
 #map-content {
     position: absolute;
     top: 0;
