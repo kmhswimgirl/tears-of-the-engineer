@@ -11,19 +11,16 @@ html {
     display: flex;
     justify-content: center; /* Centers the navbar horizontally */
     width: 100%; /* Ensures the container takes the full width */
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
-
 .navbar {
     display: flex;
     align-items: center; /* Aligns items vertically in the center */
     background-color: #99925D;
-    position: fixed;
-    top: 10px;
-
-    width: 100%;
-    z-index: 1000;
-    border-radius: 20px;
     width: 500px;
+    border-radius: 20px;
 }
 
 .navbar button{
@@ -43,6 +40,9 @@ html {
     height: 600px; /* Adjust height as needed */
     overflow: hidden;
     position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #pannable-image {
@@ -58,6 +58,15 @@ html {
     transform-origin: center; /* Ensure the scaling occurs from the center */
 }
 
+
+.shrine, .resHallIcon, .goatIcon, .diningIcon, .labIcon, .skullIcon {
+    display: inline-block;
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    padding: 0;
+    margin: 0;
+}
+
 /* Apply the glow effect only to the path elements within the SVGs on hover */
 .shrine svg:hover {
     transform: scale(1.1); /* Example of scaling the element */
@@ -68,12 +77,237 @@ html {
 
 .map-container a {
     position: absolute;
+    display: inline-block;
+    width: auto; /* Adjust the width as needed */
+    height: auto; /* Adjust the height as needed */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
 }
 
-#shrine-button {
+#resHall-button{
     top: 100px; /* Adjust the position as needed */
     left: 200px; /* Adjust the position as needed */
 }
+
+/* IDs to lock the positions of icons*/
+#east{
+    top: 475px; 
+    left: 775px;
+    width: 20px;
+    height: 20px;
+}
+
+#morgan1{
+    top: 550px; 
+    left: 200px; 
+    width: 20px;
+    height: 20px;
+}
+
+#daniels{
+    top: 570px; 
+    left: 270px; 
+    width: 20px;
+    height: 20px;
+}
+
+#riley{
+    top: 580px; 
+    left: 370px; 
+    width: 20px;
+    height: 20px;
+}
+
+#messenger{
+    top: 410px; 
+    left: 375px; 
+    width: 20px;
+    height: 20px;
+}
+
+#institute{
+    top: 705px; 
+    left: 725px; 
+    width: 20px;
+    height: 20px;
+}
+
+#founders{
+    top: 590px; 
+    left: 755px; 
+    width: 20px;
+    height: 20px;
+}
+
+#ellsworth{
+    top: 645px; 
+    left: 200px; 
+    width: 20px;
+    height: 20px;
+}
+
+#fuller{
+    top: 650px; 
+    left: 300px; 
+    width: 20px;
+    height: 20px;
+}
+
+#stoddard{
+    top: 635px; 
+    left: 90px; 
+    width: 20px;
+    height: 20px;
+}
+
+#skull{
+    top: 630px; 
+    left: 655px; 
+    width: 15px;
+    height: 15px;
+}
+
+#proudGoat{
+    top: 505px; 
+    left: 355px; 
+    width: 15px;
+    height: 15px;
+}
+
+#chargingGoat{
+    top: 325px; 
+    left: 265px; 
+    width: 15px;
+    height: 15px;
+}
+
+#ak{
+    top: 305px; 
+    left: 575px; 
+    width: 20px;
+    height: 20px;
+}
+
+#higgins{
+    top: 440px; 
+    left: 450px;  
+    width: 20px;
+    height: 20px;
+}
+
+#fullerL{
+    top: 335px; 
+    left: 635px; 
+    width: 20px;
+    height: 20px;
+}
+
+#salisbury{
+    top: 380px; 
+    left: 575px; 
+    width: 20px;
+    height: 20px;
+}
+
+#kaven{
+    top: 340px; 
+    left: 690px; 
+    width: 20px;
+    height: 20px;
+}
+
+#olin{
+    top: 325px; 
+    left: 480px; 
+    width: 20px;
+    height: 20px;
+}
+
+#goddard{
+    top: 235px; 
+    left: 495px; 
+    width: 20px;
+    height: 20px;
+}
+
+#stratton{
+    top: 475px; 
+    left: 510px; 
+    width: 20px;
+    height: 20px;
+}
+
+#gs{
+    top: 430px; 
+    left: 520px; 
+    width: 20px;
+    height: 20px;
+}
+
+#rec{
+    top: 460px; 
+    left: 200px; 
+    width: 20px;
+    height: 20px;
+}
+
+#harrington{
+    top: 400px; 
+    left: 300px; 
+    width: 20px;
+    height: 20px;
+}
+
+#washburn{
+    top: 460px; 
+    left: 560px; 
+    width: 20px;
+    height: 20px;
+}
+
+#library{
+    top: 500px; 
+    left: 700px; 
+    width: 20px;
+    height: 20px;
+}
+
+#unity{
+    top: 500px; 
+    left: 650px; 
+    width: 20px;
+    height: 20px;
+}
+
+#boynton{
+    top: 540px; 
+    left: 550px; 
+    width: 20px;
+    height: 20px;
+}
+
+#admissions{
+    top: 505px; 
+    left: 380px; 
+    width: 20px;
+    height: 20px;
+}
+
+#alden{
+    top: 475px; 
+    left: 510px; 
+    width: 20px;
+    height: 20px;
+}
+
+#campusC{
+    top: 475px; 
+    left: 510px; 
+    width: 20px;
+    height: 20px;
+}
+
+
 
 #map-content {
     position: absolute;
