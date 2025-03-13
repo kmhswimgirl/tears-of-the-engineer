@@ -11,19 +11,16 @@ html {
     display: flex;
     justify-content: center; /* Centers the navbar horizontally */
     width: 100%; /* Ensures the container takes the full width */
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
-
 .navbar {
     display: flex;
     align-items: center; /* Aligns items vertically in the center */
     background-color: #99925D;
-    position: fixed;
-    top: 10px;
-
-    width: 100%;
-    z-index: 1000;
-    border-radius: 20px;
     width: 500px;
+    border-radius: 20px;
 }
 
 .navbar button{
@@ -43,6 +40,9 @@ html {
     height: 600px; /* Adjust height as needed */
     overflow: hidden;
     position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #pannable-image {
@@ -56,6 +56,15 @@ html {
 .shrine path {
     transition: transform 0.2s, fill 0.2s, stroke 0.2s, filter 0.2s; /* Smooth transition for the changes */
     transform-origin: center; /* Ensure the scaling occurs from the center */
+}
+
+
+.shrine, .resHallIcon, .goatIcon, .diningIcon, .labIcon, .skullIcon {
+    display: inline-block;
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    padding: 0;
+    margin: 0;
 }
 
 /* Apply the glow effect only to the path elements within the SVGs on hover */
@@ -75,9 +84,52 @@ html {
     margin: 0; /* Remove margin */
 }
 
-#shrine-button {
+#resHall-button{
     top: 100px; /* Adjust the position as needed */
     left: 200px; /* Adjust the position as needed */
+}
+
+/* IDs to lock the positions of icons*/
+#east{
+    top: 475px; 
+    left: 775px;
+    width: 20px;
+    height: 20px;
+}
+
+#morgan1{
+    top: 550px; 
+    left: 200px; 
+    width: 20px;
+    height: 20px;
+}
+
+#daniels{
+    top: 570px; 
+    left: 270px; 
+    width: 20px;
+    height: 20px;
+}
+
+#riley{
+    top: 580px; 
+    left: 370px; 
+    width: 20px;
+    height: 20px;
+}
+
+#messenger{
+    top: 410px; 
+    left: 375px; 
+    width: 20px;
+    height: 20px;
+}
+
+#institute{
+    top: 410px; 
+    left: 375px; 
+    width: 20px;
+    height: 20px;
 }
 
 #map-content {
@@ -85,3 +137,4 @@ html {
     top: 0;
     left: 0;
 }
+
