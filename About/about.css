@@ -1,6 +1,6 @@
 /* CSS styling for the About page*/
 body{
-    background-color: rgb(41, 175, 171);
+    background-color: rgb(10, 17, 17);
 }
 
 .topbar{
@@ -18,4 +18,8 @@ p{
 
 ul{
     color: aliceblue;
+}
+
+.prog{
+    width: 600px;
 }
