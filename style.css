@@ -52,41 +52,69 @@ html {
     transform-origin: top left;
 }
 
-/* Remove the filter effect by default */
-.shrine path {
-    transition: transform 0.2s, fill 0.2s, stroke 0.2s, filter 0.2s; /* Smooth transition for the changes */
-    transform-origin: center; /* Ensure the scaling occurs from the center */
-}
-
-
 .shrine, .resHallIcon, .goatIcon, .diningIcon, .labIcon, .skullIcon {
     display: inline-block;
-    width: 20px; /* Adjust the width as needed */
-    height: 20px; /* Adjust the height as needed */
+    width: 20px; 
+    height: 20px; 
     padding: 0;
     margin: 0;
 }
 
-/* Apply the glow effect only to the path elements within the SVGs on hover */
-.shrine svg:hover {
-    transform: scale(1.1); /* Example of scaling the element */
-    filter: url(#glow); /* Apply the glow filter */
+/* Using the glow filter */
+#boynton svg:hover {
+    transform: scale(1.1); 
+    filter: url(#glow); 
+}
+#washburn svg:hover {
+    transform: scale(1.1); 
+    filter: url(#glow); 
+}
+#alden svg:hover {
+    transform: scale(1.1); 
+    filter: url(#glow); 
+}
+#rec svg:hover {
+    transform: scale(1.1); 
+    filter: url(#glow); 
+}
+#admissions svg:hover {
+    transform: scale(1.1); 
+    filter: url(#glow); 
+}
+#campusC svg:hover {
+    transform: scale(1.1); 
+    filter: url(#glow); 
+}
+#library svg:hover {
+    transform: scale(1.1); 
+    filter: url(#glow); 
+}
+#harrington svg:hover {
+    transform: scale(1.1); 
+    filter: url(#glow); 
+}
+#gs svg:hover {
+    transform: scale(1.1); 
+    filter: url(#glow); 
+}
+#unity svg:hover {
+    transform: scale(1.1); 
+    filter: url(#glow); 
 }
 
 /*classes to lock the icons into place*/
-
 .map-container a {
     position: absolute;
     display: inline-block;
-    width: auto; /* Adjust the width as needed */
-    height: auto; /* Adjust the height as needed */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
+    width: auto; 
+    height: auto; 
+    padding: 0; 
+    margin: 0; 
 }
 
 #resHall-button{
-    top: 100px; /* Adjust the position as needed */
-    left: 200px; /* Adjust the position as needed */
+    top: 100px; 
+    left: 200px; 
 }
 
 /* IDs to lock the positions of icons*/
@@ -266,8 +294,8 @@ html {
 }
 
 #library{
-    top: 500px; 
-    left: 700px; 
+    top: 440px; 
+    left: 630px; 
     width: 20px;
     height: 20px;
 }
@@ -294,18 +322,20 @@ html {
 }
 
 #alden{
-    top: 475px; 
-    left: 510px; 
+    top: 565px; 
+    left: 435px; 
     width: 20px;
     height: 20px;
 }
 
 #campusC{
-    top: 475px; 
-    left: 510px; 
+    top: 365px; 
+    left: 435px; 
     width: 20px;
     height: 20px;
 }
+
+
 
 #map-content {
     position: absolute;
