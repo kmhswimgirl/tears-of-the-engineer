@@ -1,6 +1,6 @@
 /* CSS styling for the About page*/
 body{
-    background-color: rgb(41, 175, 171);
+    background-color: rgb(10, 17, 17);
 }
 
 .topbar{
@@ -8,7 +8,6 @@ body{
     color:beige;
     padding: 10px;
     margin: 0px;
-    
 }
 
 /* Text Rules */
@@ -18,4 +17,17 @@ p{
 
 ul{
     color: aliceblue;
+}
+
+h2{
+    color:aliceblue;
+    text-decoration: underline;
+}
+
+.prog{
+    width: 600px;
+}
+
+.final{
+    width: 1000px;
 }
